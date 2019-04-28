@@ -14,7 +14,7 @@
     <div class="container text-center">
       <h1 class="jumbotron">Mission to Mars
         <br>
-        <button type="button" class="btn btn-default">Scrape Updated Data</button>
+        <button type="button" class="btn btn-default">Scrape Newest Data</button>
       </h1>
 
       <!-- latest news about Mars -->
@@ -30,16 +30,65 @@
 
       <div class = "row">
         <div class="col-lg-8">
-          <h4 align="left">Featured Mars Image</h4>
+          <h4 align="text-center">Featured Image</h4>
           <br>
-          <img src={{featured_image}} alt="Featured Mars Image" width=100%>
+          <img src={{featured_image}} alt="Featured Mars Image" width=75%>
         </div>
         <div class="col-lg-4">
-          <h4 align="left">Current Weather on Mars</h4>
+          <h4 align="left">Weather on Mars Now</h4>
           <p align="left">
             {{mars_weather}}
           </p>
           <br>
+          <h4 align="left">Facts About Mars</h4>
+          <p align="left">
+            <table border="1" class="dataframe">
+              <thead>
+                <tr style="text-align: right;">
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Equatorial Diameter:</th>
+                  <td>6,792 km</td>
+                </tr>
+                <tr>
+                  <th>Polar Diameter:</th>
+                  <td>6,752 km</td>
+                </tr>
+                <tr>
+                  <th>Mass:</th>
+                  <td>6.42 x 10^23 kg (10.7% Earth)</td>
+                </tr>
+                <tr>
+                  <th>Moons:</th>
+                  <td>2 (Phobos &amp; Deimos)</td>
+                </tr>
+                <tr>
+                  <th>Orbit Distance:</th>
+                  <td>227,943,824 km (1.52 AU)</td>
+                </tr>
+                <tr>
+                  <th>Orbit Period:</th>
+                  <td>687 days (1.9 years)</td>
+                </tr>
+                <tr>
+                  <th>Surface Temperature:</th>
+                  <td>-153 to 20C</td>
+                </tr>
+                <tr>
+                  <th>First Record:</th>
+                  <td>2nd millennium BC</td>
+                </tr>
+                <tr>
+                  <th>Recorded By:</th>
+                  <td>Egyptian astronomers</td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+        </div>
+      </div>
 
       <!-- loop through images
       <div>
